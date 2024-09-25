@@ -23,6 +23,5 @@ Bu proje, Unsplash API'sini kullanarak fotoğraf arama işlevini sunan basit bir
 - Unsplash API: Fotoğrafları almak için kullanılan üçüncü parti API. Unsplash API dokümantasyonu adresinden daha fazla bilgi alabilirsiniz.<br>
 
 <h1>Ekran Görüntüsü</h1>
-<hr>
 
 ![](Search.gif)
