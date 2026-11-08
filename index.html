@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arama Uygulamsı</title>
+    <meta
+      name="theme-color"
+      content="#f5f7fb"
+    />
+    <title>Search Gallery | Image Explorer</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ccircle cx='28' cy='28' r='13' fill='none' stroke='white' stroke-width='5'/%3E%3Cpath d='m38 38 12 12' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <div class="form-wrapper">
+    <main class="page-shell">
+      <header class="page-heading">
+        <span class="eyebrow">GÖRSEL KEŞFİ</span>
+        <h1>Aradığını bul, ilhamı keşfet.</h1>
+        <p>Unsplash koleksiyonunda arama yap ve görselleri keşfet.</p>
+      </header>
+
+      <section class="search-panel" aria-label="Görsel arama">
         <form id="form">
-          <input id="searchInput" type="text" placeholder="Bir şey ara." />
+          <label class="sr-only" for="searchInput">Aranacak kelime</label>
+          <div class="search-field">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Örneğin: doğa, mimari, seyahat..."
+              autocomplete="off"
+            />
+          </div>
           <div class="button-wrapper">
-            <button id="searchButton">Ara</button>
-            <button id="clearButton">Temizle</button>
+            <button id="searchButton" type="submit">Ara</button>
+            <button id="clearButton" type="button">Temizle</button>
           </div>
         </form>
-      </div>
-      <div class="imagelist-wrapper">
-        <!-- Resimleri tutacak -->
-      </div>
-    </div>
+      </section>
+
+      <p class="search-status" id="searchStatus" role="status" aria-live="polite"></p>
+      <section
+        class="imagelist-wrapper"
+        aria-label="Arama sonuçları"
+        aria-live="polite"
+      ></section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

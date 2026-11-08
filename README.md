@@ -1,27 +1,29 @@
-﻿<h1>Search Project</h1>
-<hr>
+# Search Gallery | Image Explorer
 
-Bu proje, Unsplash API'sini kullanarak fotoğraf arama işlevini sunan basit bir web uygulamasıdır. HTML5, CSS ve JavaScript kullanarak geliştirilen bu uygulama, kullanıcıların Unsplash üzerinde istedikleri anahtar kelimelere göre fotoğraf aramalarına olanak tanır.<br>
+A responsive web application built with HTML, CSS, and JavaScript for searching and discovering photos from Unsplash.
 
-<h1>Özellikler</h1>
-<hr>
+**Live demo:** [Explore Search Gallery](https://meryemozkan1.github.io/Search-app-proje/)
 
-- _Dinamik Fotoğraf Arama_: Kullanıcı, arama kutusuna bir terim girdiğinde Unsplash API üzerinden ilgili fotoğraflar getirilir.<br>
-- _Sonuçların Gösterimi_: Arama sonuçları, görsel ve açıklamalarıyla birlikte kullanıcıya sunulur.<br>
+## Features
 
-- _Duyarlı Tasarım_: CSS kullanılarak tüm ekran boyutlarına uyum sağlayan, mobil dostu bir arayüz.<br>
+- Search the Unsplash photo collection by keyword
+- Browse search results in a modern, responsive gallery
+- Get feedback for loading, empty results, and errors
+- Clear search results and start a new search
+- Responsive interface for mobile, tablet, and desktop
+- Accessible form labels and alternative text for images
 
-<h1>Kullanılan Teknolojiler</h1>
-<hr>
+## Built with
 
-- HTML5: Sayfa yapısını oluşturmak için kullanıldı. <br>
+- **HTML5** — page structure and accessible content
+- **CSS3** — responsive styling and gallery layout
+- **JavaScript** — search functionality and dynamic results
+- **Unsplash API** — photo search results
 
-- CSS: Kullanıcı dostu ve duyarlı bir arayüz oluşturmak için kullanıldı.<br>
+## Run locally
 
-- JavaScript: Unsplash API'sine yapılan istekleri yönetmek ve dinamik içerik eklemek için kullanıldı.<br>
+1. Clone the repository or download the project files.
+2. Open `index.html` in a browser. Using a local web server is recommended during development.
+3. Enter a keyword in the search field and select **Search**.
 
-- Unsplash API: Fotoğrafları almak için kullanılan üçüncü parti API. Unsplash API dokümantasyonu adresinden daha fazla bilgi alabilirsiniz.<br>
-
-<h1>Ekran Görüntüsü</h1>
-
-![](Search.gif)
+> Photo search requires access to the Unsplash API and a valid API key.
